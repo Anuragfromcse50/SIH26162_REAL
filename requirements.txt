@@ -8,3 +8,6 @@ folium
 streamlit
 streamlit-folium
 python-dotenv
+
+# Machine learning library used by the Random Forest model
+scikit-learn
