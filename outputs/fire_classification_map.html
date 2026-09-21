@@ -1,0 +1,3599 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d823a312d02f09cade5de6172b21b98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d823a312d02f09cade5de6172b21b98" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d823a312d02f09cade5de6172b21b98 = L.map(
+                "map_4d823a312d02f09cade5de6172b21b98",
+                {
+                    center: [25.289759811320753, 78.221445754717],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bff81e7b419fb6ec9053a89f60ccf2fe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bff81e7b419fb6ec9053a89f60ccf2fe.addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+            var circle_marker_6f6454f02af2ba1532a20149bc1b7dd7 = L.circleMarker(
+                [25.53974, 96.71659],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_40ac66bcdf0c5bd8b9918898d315555a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0ace86d4e495d9f7a3312defdc0bf070 = $(`<div id="html_0ace86d4e495d9f7a3312defdc0bf070" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 25.53974 Longitude: 96.71659 FRP: 2.43 MW Persistence: 1 days Industry Distance: 1019.39 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_40ac66bcdf0c5bd8b9918898d315555a.setContent(html_0ace86d4e495d9f7a3312defdc0bf070);
+            
+        
+
+        circle_marker_6f6454f02af2ba1532a20149bc1b7dd7.bindPopup(popup_40ac66bcdf0c5bd8b9918898d315555a)
+        ;
+
+        
+    
+    
+            circle_marker_6f6454f02af2ba1532a20149bc1b7dd7.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53cb9d333f3d4578534045a490ecbd8f = L.circleMarker(
+                [36.31959, 94.79975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_9ceb9ebe5eb952ed2000180dca805b13 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5f3fca123085f43c89360b2a82cb0e96 = $(`<div id="html_5f3fca123085f43c89360b2a82cb0e96" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.31959 Longitude: 94.79975 FRP: 2.02 MW Persistence: 1 days Industry Distance: 1612.01 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_9ceb9ebe5eb952ed2000180dca805b13.setContent(html_5f3fca123085f43c89360b2a82cb0e96);
+            
+        
+
+        circle_marker_53cb9d333f3d4578534045a490ecbd8f.bindPopup(popup_9ceb9ebe5eb952ed2000180dca805b13)
+        ;
+
+        
+    
+    
+            circle_marker_53cb9d333f3d4578534045a490ecbd8f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_837d0fb165a3f37726571c0a8a1c5af0 = L.circleMarker(
+                [36.32042, 94.80437],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_e83ae755e48ad7b9eacff8cdc0752b0d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_74202c05b5252c8e03d65b7e147f866f = $(`<div id="html_74202c05b5252c8e03d65b7e147f866f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.32042 Longitude: 94.80437 FRP: 2.02 MW Persistence: 1 days Industry Distance: 1612.31 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_e83ae755e48ad7b9eacff8cdc0752b0d.setContent(html_74202c05b5252c8e03d65b7e147f866f);
+            
+        
+
+        circle_marker_837d0fb165a3f37726571c0a8a1c5af0.bindPopup(popup_e83ae755e48ad7b9eacff8cdc0752b0d)
+        ;
+
+        
+    
+    
+            circle_marker_837d0fb165a3f37726571c0a8a1c5af0.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a54fba2d292f9cc6894cc3998472e5c = L.circleMarker(
+                [36.32299, 94.79882],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_2f9c07004a67941d04816fc4d348e028 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dea7890540c7db40315af3162ad53e8a = $(`<div id="html_dea7890540c7db40315af3162ad53e8a" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.32299 Longitude: 94.79882 FRP: 2.02 MW Persistence: 1 days Industry Distance: 1612.29 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_2f9c07004a67941d04816fc4d348e028.setContent(html_dea7890540c7db40315af3162ad53e8a);
+            
+        
+
+        circle_marker_5a54fba2d292f9cc6894cc3998472e5c.bindPopup(popup_2f9c07004a67941d04816fc4d348e028)
+        ;
+
+        
+    
+    
+            circle_marker_5a54fba2d292f9cc6894cc3998472e5c.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95063717803bbdda347323a68df511ad = L.circleMarker(
+                [36.32382, 94.80344],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_72be546275d1351c12452cdf0f19bbb6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7229402f9a8781f8c22a3c035b2ba278 = $(`<div id="html_7229402f9a8781f8c22a3c035b2ba278" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.32382 Longitude: 94.80344 FRP: 2.02 MW Persistence: 1 days Industry Distance: 1612.59 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_72be546275d1351c12452cdf0f19bbb6.setContent(html_7229402f9a8781f8c22a3c035b2ba278);
+            
+        
+
+        circle_marker_95063717803bbdda347323a68df511ad.bindPopup(popup_72be546275d1351c12452cdf0f19bbb6)
+        ;
+
+        
+    
+    
+            circle_marker_95063717803bbdda347323a68df511ad.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9015502691ea756ea72c28027d175f52 = L.circleMarker(
+                [36.32722, 94.8025],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_45547e488d00429a9307f6332b16b850 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c193be5af3a441349728f75bbbc74d29 = $(`<div id="html_c193be5af3a441349728f75bbbc74d29" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.32722 Longitude: 94.80250 FRP: 5.86 MW Persistence: 1 days Industry Distance: 1612.86 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_45547e488d00429a9307f6332b16b850.setContent(html_c193be5af3a441349728f75bbbc74d29);
+            
+        
+
+        circle_marker_9015502691ea756ea72c28027d175f52.bindPopup(popup_45547e488d00429a9307f6332b16b850)
+        ;
+
+        
+    
+    
+            circle_marker_9015502691ea756ea72c28027d175f52.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_745333173aa0b433b133f7f15e8b103c = L.circleMarker(
+                [36.33063, 94.80157],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_8f95af5d50c37eb08a9392045bef5bc4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b642935c33d2bf154e23ec8f47d38b6e = $(`<div id="html_b642935c33d2bf154e23ec8f47d38b6e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.33063 Longitude: 94.80157 FRP: 5.86 MW Persistence: 1 days Industry Distance: 1613.14 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_8f95af5d50c37eb08a9392045bef5bc4.setContent(html_b642935c33d2bf154e23ec8f47d38b6e);
+            
+        
+
+        circle_marker_745333173aa0b433b133f7f15e8b103c.bindPopup(popup_8f95af5d50c37eb08a9392045bef5bc4)
+        ;
+
+        
+    
+    
+            circle_marker_745333173aa0b433b133f7f15e8b103c.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66cfb02ba2ba831028a74da5b969bae5 = L.circleMarker(
+                [36.33146, 94.80618],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_a791a0a321743d33e203f4706fc20a97 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_698f9c3aa0cc5ca269bdc312155719ad = $(`<div id="html_698f9c3aa0cc5ca269bdc312155719ad" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.33146 Longitude: 94.80618 FRP: 4.22 MW Persistence: 1 days Industry Distance: 1613.44 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_a791a0a321743d33e203f4706fc20a97.setContent(html_698f9c3aa0cc5ca269bdc312155719ad);
+            
+        
+
+        circle_marker_66cfb02ba2ba831028a74da5b969bae5.bindPopup(popup_a791a0a321743d33e203f4706fc20a97)
+        ;
+
+        
+    
+    
+            circle_marker_66cfb02ba2ba831028a74da5b969bae5.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a33bf049624e6e02f10fd970eacb034f = L.circleMarker(
+                [36.37901, 95.15118],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_dcb0d43d99478aefa7fcdef0fd4efea7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a2a8139aeecc53cc5f2ab5801d7aceaf = $(`<div id="html_a2a8139aeecc53cc5f2ab5801d7aceaf" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.37901 Longitude: 95.15118 FRP: 5.02 MW Persistence: 1 days Industry Distance: 1634.61 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_dcb0d43d99478aefa7fcdef0fd4efea7.setContent(html_a2a8139aeecc53cc5f2ab5801d7aceaf);
+            
+        
+
+        circle_marker_a33bf049624e6e02f10fd970eacb034f.bindPopup(popup_dcb0d43d99478aefa7fcdef0fd4efea7)
+        ;
+
+        
+    
+    
+            circle_marker_a33bf049624e6e02f10fd970eacb034f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7300f0ef4a130585243fb6d605eb3925 = L.circleMarker(
+                [36.37979, 95.15571],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b2f2052ce5e738298d13875a709adc7a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3a8545212cba4dda04f2d819c97e322b = $(`<div id="html_3a8545212cba4dda04f2d819c97e322b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.37979 Longitude: 95.15571 FRP: 5.38 MW Persistence: 1 days Industry Distance: 1634.91 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b2f2052ce5e738298d13875a709adc7a.setContent(html_3a8545212cba4dda04f2d819c97e322b);
+            
+        
+
+        circle_marker_7300f0ef4a130585243fb6d605eb3925.bindPopup(popup_b2f2052ce5e738298d13875a709adc7a)
+        ;
+
+        
+    
+    
+            circle_marker_7300f0ef4a130585243fb6d605eb3925.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cde8d796dc0c0b6d2fa9e077101be726 = L.circleMarker(
+                [36.38058, 95.16024],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_82d7b601c913b5c67352ebffba32911a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_75584ac004cefe4e6efc0aee1bd6c0f6 = $(`<div id="html_75584ac004cefe4e6efc0aee1bd6c0f6" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.38058 Longitude: 95.16024 FRP: 5.38 MW Persistence: 1 days Industry Distance: 1635.20 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_82d7b601c913b5c67352ebffba32911a.setContent(html_75584ac004cefe4e6efc0aee1bd6c0f6);
+            
+        
+
+        circle_marker_cde8d796dc0c0b6d2fa9e077101be726.bindPopup(popup_82d7b601c913b5c67352ebffba32911a)
+        ;
+
+        
+    
+    
+            circle_marker_cde8d796dc0c0b6d2fa9e077101be726.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a982b090b3f5afb35d5897faeb1ab982 = L.circleMarker(
+                [36.38133, 95.14701],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_308906320e815d06f839714a45cb046a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_200da4d2020be1bb64803bbbdf80d052 = $(`<div id="html_200da4d2020be1bb64803bbbdf80d052" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.38133 Longitude: 95.14701 FRP: 1.57 MW Persistence: 1 days Industry Distance: 1634.62 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_308906320e815d06f839714a45cb046a.setContent(html_200da4d2020be1bb64803bbbdf80d052);
+            
+        
+
+        circle_marker_a982b090b3f5afb35d5897faeb1ab982.bindPopup(popup_308906320e815d06f839714a45cb046a)
+        ;
+
+        
+    
+    
+            circle_marker_a982b090b3f5afb35d5897faeb1ab982.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3753764ecd05dbf1b0703370d24897d = L.circleMarker(
+                [36.38213, 95.15154],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_8d977181abf2b34b30364cc14fef6741 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2b995c1c2553c78ea5eb2bcaa12ef808 = $(`<div id="html_2b995c1c2553c78ea5eb2bcaa12ef808" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.38213 Longitude: 95.15154 FRP: 1.57 MW Persistence: 1 days Industry Distance: 1634.92 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_8d977181abf2b34b30364cc14fef6741.setContent(html_2b995c1c2553c78ea5eb2bcaa12ef808);
+            
+        
+
+        circle_marker_b3753764ecd05dbf1b0703370d24897d.bindPopup(popup_8d977181abf2b34b30364cc14fef6741)
+        ;
+
+        
+    
+    
+            circle_marker_b3753764ecd05dbf1b0703370d24897d.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17cd3036cc1775f29d04a8e1e420eec1 = L.circleMarker(
+                [36.38238, 95.15027],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_268886ea7b6b598ced5ca5ef3b45d21d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f38704697d44b8d4f49c3565c3c6fe5c = $(`<div id="html_f38704697d44b8d4f49c3565c3c6fe5c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 36.38238 Longitude: 95.15027 FRP: 5.02 MW Persistence: 1 days Industry Distance: 1634.88 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_268886ea7b6b598ced5ca5ef3b45d21d.setContent(html_f38704697d44b8d4f49c3565c3c6fe5c);
+            
+        
+
+        circle_marker_17cd3036cc1775f29d04a8e1e420eec1.bindPopup(popup_268886ea7b6b598ced5ca5ef3b45d21d)
+        ;
+
+        
+    
+    
+            circle_marker_17cd3036cc1775f29d04a8e1e420eec1.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b912a2a15fa9e3b53b5f422ea43a7895 = L.circleMarker(
+                [7.12867, 81.0751],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b4a3ce364bdf532e0cd910c7eb589a6f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6e69a775741f410feb97548b7353daee = $(`<div id="html_6e69a775741f410feb97548b7353daee" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 7.12867 Longitude: 81.07510 FRP: 3.41 MW Persistence: 1 days Industry Distance: 1799.28 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b4a3ce364bdf532e0cd910c7eb589a6f.setContent(html_6e69a775741f410feb97548b7353daee);
+            
+        
+
+        circle_marker_b912a2a15fa9e3b53b5f422ea43a7895.bindPopup(popup_b4a3ce364bdf532e0cd910c7eb589a6f)
+        ;
+
+        
+    
+    
+            circle_marker_b912a2a15fa9e3b53b5f422ea43a7895.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_651f70528ffcc887c68d96fb3f9e37a4 = L.circleMarker(
+                [8.29176, 80.75997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5dbe178f63d8d26f703d42c16f6e0da8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d2b29dc38687cc8750bd89216a4b8546 = $(`<div id="html_d2b29dc38687cc8750bd89216a4b8546" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.29176 Longitude: 80.75997 FRP: 4.66 MW Persistence: 1 days Industry Distance: 1669.87 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5dbe178f63d8d26f703d42c16f6e0da8.setContent(html_d2b29dc38687cc8750bd89216a4b8546);
+            
+        
+
+        circle_marker_651f70528ffcc887c68d96fb3f9e37a4.bindPopup(popup_5dbe178f63d8d26f703d42c16f6e0da8)
+        ;
+
+        
+    
+    
+            circle_marker_651f70528ffcc887c68d96fb3f9e37a4.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a86070fefbf1fc8bdeb3fecb28a79e2 = L.circleMarker(
+                [8.35397, 81.29202],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_3cf3aa1c8111376ea9cf6ca3757bb5a4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_561e230b315654b136f109635387cd1c = $(`<div id="html_561e230b315654b136f109635387cd1c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.35397 Longitude: 81.29202 FRP: 4.13 MW Persistence: 1 days Industry Distance: 1685.64 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_3cf3aa1c8111376ea9cf6ca3757bb5a4.setContent(html_561e230b315654b136f109635387cd1c);
+            
+        
+
+        circle_marker_2a86070fefbf1fc8bdeb3fecb28a79e2.bindPopup(popup_3cf3aa1c8111376ea9cf6ca3757bb5a4)
+        ;
+
+        
+    
+    
+            circle_marker_2a86070fefbf1fc8bdeb3fecb28a79e2.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e78184f5836ec2cc2d21b4a06fa77331 = L.circleMarker(
+                [8.3574, 81.2915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_36015dfd267ddf9a8067974cafa81344 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c33aac579c30544a06cd0e4927a09899 = $(`<div id="html_c33aac579c30544a06cd0e4927a09899" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.35740 Longitude: 81.29150 FRP: 6.45 MW Persistence: 1 days Industry Distance: 1685.30 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_36015dfd267ddf9a8067974cafa81344.setContent(html_c33aac579c30544a06cd0e4927a09899);
+            
+        
+
+        circle_marker_e78184f5836ec2cc2d21b4a06fa77331.bindPopup(popup_36015dfd267ddf9a8067974cafa81344)
+        ;
+
+        
+    
+    
+            circle_marker_e78184f5836ec2cc2d21b4a06fa77331.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7315099262e240633bb75d4c7813f861 = L.circleMarker(
+                [8.35796, 81.29525],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_38e7366e766816771a622e6031b702c9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4ddbfaa16202ed55d1339ce34da8ba75 = $(`<div id="html_4ddbfaa16202ed55d1339ce34da8ba75" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.35796 Longitude: 81.29525 FRP: 5.82 MW Persistence: 1 days Industry Distance: 1685.09 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_38e7366e766816771a622e6031b702c9.setContent(html_4ddbfaa16202ed55d1339ce34da8ba75);
+            
+        
+
+        circle_marker_7315099262e240633bb75d4c7813f861.bindPopup(popup_38e7366e766816771a622e6031b702c9)
+        ;
+
+        
+    
+    
+            circle_marker_7315099262e240633bb75d4c7813f861.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f25c29df9ccc91b68f17a3e98f025ae7 = L.circleMarker(
+                [8.36083, 81.29099],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_1ea456074dada4b157ec3e190a47d5bf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6798a3e491614ae961db92455ca6fcce = $(`<div id="html_6798a3e491614ae961db92455ca6fcce" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.36083 Longitude: 81.29099 FRP: 6.45 MW Persistence: 1 days Industry Distance: 1684.97 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_1ea456074dada4b157ec3e190a47d5bf.setContent(html_6798a3e491614ae961db92455ca6fcce);
+            
+        
+
+        circle_marker_f25c29df9ccc91b68f17a3e98f025ae7.bindPopup(popup_1ea456074dada4b157ec3e190a47d5bf)
+        ;
+
+        
+    
+    
+            circle_marker_f25c29df9ccc91b68f17a3e98f025ae7.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7763bf9cc88a4d7f668fb1af11de6bff = L.circleMarker(
+                [8.69229, 80.4555],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_a2b6dc98beb8a260bcb07296775552e2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c8b87c941a77b75b3e0f35c419c9a2da = $(`<div id="html_c8b87c941a77b75b3e0f35c419c9a2da" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.69229 Longitude: 80.45550 FRP: 5.00 MW Persistence: 1 days Industry Distance: 1614.51 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_a2b6dc98beb8a260bcb07296775552e2.setContent(html_c8b87c941a77b75b3e0f35c419c9a2da);
+            
+        
+
+        circle_marker_7763bf9cc88a4d7f668fb1af11de6bff.bindPopup(popup_a2b6dc98beb8a260bcb07296775552e2)
+        ;
+
+        
+    
+    
+            circle_marker_7763bf9cc88a4d7f668fb1af11de6bff.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc3404623dd666372f8877fed0d3e6f = L.circleMarker(
+                [8.69283, 80.45908],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_e1ea3011768fa55db8b6bef1f9f68258 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6ca3f3ed926eaab95702998c0bdd2493 = $(`<div id="html_6ca3f3ed926eaab95702998c0bdd2493" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.69283 Longitude: 80.45908 FRP: 10.67 MW Persistence: 1 days Industry Distance: 1614.66 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_e1ea3011768fa55db8b6bef1f9f68258.setContent(html_6ca3f3ed926eaab95702998c0bdd2493);
+            
+        
+
+        circle_marker_fdc3404623dd666372f8877fed0d3e6f.bindPopup(popup_e1ea3011768fa55db8b6bef1f9f68258)
+        ;
+
+        
+    
+    
+            circle_marker_fdc3404623dd666372f8877fed0d3e6f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbbd03899567e3c3d275d92bad33f3a5 = L.circleMarker(
+                [8.69565, 80.45499],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5ba0a18995aa26a99a11ce6f407ce738 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_49f07b8988fb4e556283c92eb164004e = $(`<div id="html_49f07b8988fb4e556283c92eb164004e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.69565 Longitude: 80.45499 FRP: 5.00 MW Persistence: 1 days Industry Distance: 1614.16 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5ba0a18995aa26a99a11ce6f407ce738.setContent(html_49f07b8988fb4e556283c92eb164004e);
+            
+        
+
+        circle_marker_cbbd03899567e3c3d275d92bad33f3a5.bindPopup(popup_5ba0a18995aa26a99a11ce6f407ce738)
+        ;
+
+        
+    
+    
+            circle_marker_cbbd03899567e3c3d275d92bad33f3a5.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68a84c51039d809a11bc1e642c28a341 = L.circleMarker(
+                [8.69619, 80.45857],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_4b3ae704cc02e699b3c27739177accfa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a2f8886c29dc92b032025a8985858cf7 = $(`<div id="html_a2f8886c29dc92b032025a8985858cf7" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.69619 Longitude: 80.45857 FRP: 10.67 MW Persistence: 1 days Industry Distance: 1614.31 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_4b3ae704cc02e699b3c27739177accfa.setContent(html_a2f8886c29dc92b032025a8985858cf7);
+            
+        
+
+        circle_marker_68a84c51039d809a11bc1e642c28a341.bindPopup(popup_4b3ae704cc02e699b3c27739177accfa)
+        ;
+
+        
+    
+    
+            circle_marker_68a84c51039d809a11bc1e642c28a341.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c3cd4b4f9917ef296ab212547bf7844 = L.circleMarker(
+                [8.87128, 78.08917],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_9d3a804222d47c0cabf3f4b5019102aa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dd25ffc55bba4a145fd5db77fdf3b443 = $(`<div id="html_dd25ffc55bba4a145fd5db77fdf3b443" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 8.87128 Longitude: 78.08917 FRP: 4.56 MW Persistence: 1 days Industry Distance: 1480.45 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_9d3a804222d47c0cabf3f4b5019102aa.setContent(html_dd25ffc55bba4a145fd5db77fdf3b443);
+            
+        
+
+        circle_marker_4c3cd4b4f9917ef296ab212547bf7844.bindPopup(popup_9d3a804222d47c0cabf3f4b5019102aa)
+        ;
+
+        
+    
+    
+            circle_marker_4c3cd4b4f9917ef296ab212547bf7844.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4baae7f976fe69e59b2c1081c49ddf9 = L.circleMarker(
+                [9.0166, 78.13821],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_f49b522b0be26e997018ecf2c182db92 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5bb5141098823f2b83c1b522745a14c9 = $(`<div id="html_5bb5141098823f2b83c1b522745a14c9" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 9.01660 Longitude: 78.13821 FRP: 2.61 MW Persistence: 1 days Industry Distance: 1467.64 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_f49b522b0be26e997018ecf2c182db92.setContent(html_5bb5141098823f2b83c1b522745a14c9);
+            
+        
+
+        circle_marker_a4baae7f976fe69e59b2c1081c49ddf9.bindPopup(popup_f49b522b0be26e997018ecf2c182db92)
+        ;
+
+        
+    
+    
+            circle_marker_a4baae7f976fe69e59b2c1081c49ddf9.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_892470a3301bf49b4260160f0654255f = L.circleMarker(
+                [11.23936, 77.23362],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_662f43c521ce659a7ac9972c40b8f1c9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a899f13219b8f5ebb8bfa08161db7f76 = $(`<div id="html_a899f13219b8f5ebb8bfa08161db7f76" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 11.23936 Longitude: 77.23362 FRP: 3.22 MW Persistence: 1 days Industry Distance: 1201.46 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_662f43c521ce659a7ac9972c40b8f1c9.setContent(html_a899f13219b8f5ebb8bfa08161db7f76);
+            
+        
+
+        circle_marker_892470a3301bf49b4260160f0654255f.bindPopup(popup_662f43c521ce659a7ac9972c40b8f1c9)
+        ;
+
+        
+    
+    
+            circle_marker_892470a3301bf49b4260160f0654255f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d16318dc7ade85b4f9ac3740add4dcf = L.circleMarker(
+                [11.24016, 77.23308],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_04f5ec0f57a4440ebe1e1f556eda2a8c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7422cb9e5a670f6acdc7ad3252b12f2e = $(`<div id="html_7422cb9e5a670f6acdc7ad3252b12f2e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 11.24016 Longitude: 77.23308 FRP: 3.71 MW Persistence: 1 days Industry Distance: 1201.36 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_04f5ec0f57a4440ebe1e1f556eda2a8c.setContent(html_7422cb9e5a670f6acdc7ad3252b12f2e);
+            
+        
+
+        circle_marker_5d16318dc7ade85b4f9ac3740add4dcf.bindPopup(popup_04f5ec0f57a4440ebe1e1f556eda2a8c)
+        ;
+
+        
+    
+    
+            circle_marker_5d16318dc7ade85b4f9ac3740add4dcf.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6188719f062c5f3fa5d54be3c06daaae = L.circleMarker(
+                [12.82642, 79.54056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c29b8b4cb958b4a34b0188e9d5a0cf3e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_10aed19df69e2e56939cd57cffcc3e91 = $(`<div id="html_10aed19df69e2e56939cd57cffcc3e91" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 12.82642 Longitude: 79.54056 FRP: 2.42 MW Persistence: 1 days Industry Distance: 1176.53 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_c29b8b4cb958b4a34b0188e9d5a0cf3e.setContent(html_10aed19df69e2e56939cd57cffcc3e91);
+            
+        
+
+        circle_marker_6188719f062c5f3fa5d54be3c06daaae.bindPopup(popup_c29b8b4cb958b4a34b0188e9d5a0cf3e)
+        ;
+
+        
+    
+    
+            circle_marker_6188719f062c5f3fa5d54be3c06daaae.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_363e0171123b2241e269f88d85067dc9 = L.circleMarker(
+                [13.27823, 80.29333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b31fa2d4fdfe9def35dd66ef281bfade = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bcac73367eb90336331faf0c64046f0e = $(`<div id="html_bcac73367eb90336331faf0c64046f0e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 13.27823 Longitude: 80.29333 FRP: 3.27 MW Persistence: 1 days Industry Distance: 1190.04 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b31fa2d4fdfe9def35dd66ef281bfade.setContent(html_bcac73367eb90336331faf0c64046f0e);
+            
+        
+
+        circle_marker_363e0171123b2241e269f88d85067dc9.bindPopup(popup_b31fa2d4fdfe9def35dd66ef281bfade)
+        ;
+
+        
+    
+    
+            circle_marker_363e0171123b2241e269f88d85067dc9.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f70db499d7c93ac2bde6899a97db8dd7 = L.circleMarker(
+                [13.67215, 79.5278],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5747eadbe6e43570d3676d039c13ca82 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_af3ce56d73db2d7ed3615d47c23bf97b = $(`<div id="html_af3ce56d73db2d7ed3615d47c23bf97b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 13.67215 Longitude: 79.52780 FRP: 3.81 MW Persistence: 1 days Industry Distance: 1102.55 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5747eadbe6e43570d3676d039c13ca82.setContent(html_af3ce56d73db2d7ed3615d47c23bf97b);
+            
+        
+
+        circle_marker_f70db499d7c93ac2bde6899a97db8dd7.bindPopup(popup_5747eadbe6e43570d3676d039c13ca82)
+        ;
+
+        
+    
+    
+            circle_marker_f70db499d7c93ac2bde6899a97db8dd7.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca4b2a4b36b07d583727ec3d092eb323 = L.circleMarker(
+                [15.73247, 79.65581],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c85e4830fac1e44e85e5c68851dcf27b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_79967a89f93c2f043ddbdef6c89153ff = $(`<div id="html_79967a89f93c2f043ddbdef6c89153ff" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 15.73247 Longitude: 79.65581 FRP: 3.82 MW Persistence: 1 days Industry Distance: 950.37 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_c85e4830fac1e44e85e5c68851dcf27b.setContent(html_79967a89f93c2f043ddbdef6c89153ff);
+            
+        
+
+        circle_marker_ca4b2a4b36b07d583727ec3d092eb323.bindPopup(popup_c85e4830fac1e44e85e5c68851dcf27b)
+        ;
+
+        
+    
+    
+            circle_marker_ca4b2a4b36b07d583727ec3d092eb323.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41bbaed332f02d73d01b679641ef1ee2 = L.circleMarker(
+                [15.83993, 79.7503],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_8f0b9d04e3863de635fe3a4fe1f534cd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_08c0ce6b7cf22be2331add42b901c382 = $(`<div id="html_08c0ce6b7cf22be2331add42b901c382" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 15.83993 Longitude: 79.75030 FRP: 3.34 MW Persistence: 1 days Industry Distance: 950.55 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_8f0b9d04e3863de635fe3a4fe1f534cd.setContent(html_08c0ce6b7cf22be2331add42b901c382);
+            
+        
+
+        circle_marker_41bbaed332f02d73d01b679641ef1ee2.bindPopup(popup_8f0b9d04e3863de635fe3a4fe1f534cd)
+        ;
+
+        
+    
+    
+            circle_marker_41bbaed332f02d73d01b679641ef1ee2.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee8e6d212c314f346deff43d7ae1a1d8 = L.circleMarker(
+                [15.84448, 79.75757],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_476bbb698b4709b5e1f394fd90c19ff0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e444e01485f5f5bcd0db275335f32d27 = $(`<div id="html_e444e01485f5f5bcd0db275335f32d27" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 15.84448 Longitude: 79.75757 FRP: 12.39 MW Persistence: 1 days Industry Distance: 950.83 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_476bbb698b4709b5e1f394fd90c19ff0.setContent(html_e444e01485f5f5bcd0db275335f32d27);
+            
+        
+
+        circle_marker_ee8e6d212c314f346deff43d7ae1a1d8.bindPopup(popup_476bbb698b4709b5e1f394fd90c19ff0)
+        ;
+
+        
+    
+    
+            circle_marker_ee8e6d212c314f346deff43d7ae1a1d8.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_921315d0dcde72ed0fc51c2877183fd0 = L.circleMarker(
+                [15.84917, 79.74093],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_ca871926a1a0832ec803eb95f0fc6082 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4cef59639e329ef500cf2caaa3326446 = $(`<div id="html_4cef59639e329ef500cf2caaa3326446" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 15.84917 Longitude: 79.74093 FRP: 7.90 MW Persistence: 1 days Industry Distance: 949.12 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_ca871926a1a0832ec803eb95f0fc6082.setContent(html_4cef59639e329ef500cf2caaa3326446);
+            
+        
+
+        circle_marker_921315d0dcde72ed0fc51c2877183fd0.bindPopup(popup_ca871926a1a0832ec803eb95f0fc6082)
+        ;
+
+        
+    
+    
+            circle_marker_921315d0dcde72ed0fc51c2877183fd0.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8391c4dd2f27163ef82994dde0f1b8a3 = L.circleMarker(
+                [15.84972, 79.74483],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_189763482385ddd07eeafc7078ceaf26 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ecea5293eb3604922db5d1ed1b4ace79 = $(`<div id="html_ecea5293eb3604922db5d1ed1b4ace79" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 15.84972 Longitude: 79.74483 FRP: 7.90 MW Persistence: 1 days Industry Distance: 949.41 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_189763482385ddd07eeafc7078ceaf26.setContent(html_ecea5293eb3604922db5d1ed1b4ace79);
+            
+        
+
+        circle_marker_8391c4dd2f27163ef82994dde0f1b8a3.bindPopup(popup_189763482385ddd07eeafc7078ceaf26)
+        ;
+
+        
+    
+    
+            circle_marker_8391c4dd2f27163ef82994dde0f1b8a3.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98721d5eb0b825de0f00570471c0b237 = L.circleMarker(
+                [16.16523, 79.92226],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_10f15901a5b50f02c46fdba906e341a4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_db241f9fb08c58752303e5518d01092e = $(`<div id="html_db241f9fb08c58752303e5518d01092e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 16.16523 Longitude: 79.92226 FRP: 1.41 MW Persistence: 1 days Industry Distance: 942.79 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_10f15901a5b50f02c46fdba906e341a4.setContent(html_db241f9fb08c58752303e5518d01092e);
+            
+        
+
+        circle_marker_98721d5eb0b825de0f00570471c0b237.bindPopup(popup_10f15901a5b50f02c46fdba906e341a4)
+        ;
+
+        
+    
+    
+            circle_marker_98721d5eb0b825de0f00570471c0b237.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29e0827aa381ff10c0a07b2eb26158a5 = L.circleMarker(
+                [16.1658, 79.92622],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_9d4f188637ca8ac9ede069532ebc618c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b6ccfdbf477eb8911e613003190347c0 = $(`<div id="html_b6ccfdbf477eb8911e613003190347c0" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 16.16580 Longitude: 79.92622 FRP: 3.85 MW Persistence: 1 days Industry Distance: 943.09 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_9d4f188637ca8ac9ede069532ebc618c.setContent(html_b6ccfdbf477eb8911e613003190347c0);
+            
+        
+
+        circle_marker_29e0827aa381ff10c0a07b2eb26158a5.bindPopup(popup_9d4f188637ca8ac9ede069532ebc618c)
+        ;
+
+        
+    
+    
+            circle_marker_29e0827aa381ff10c0a07b2eb26158a5.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cec118a1e4205765223620d0b04a0a20 = L.circleMarker(
+                [16.33395, 78.26297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_872230f41070f694f5320104e0a4937c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ebb7f5c411f1cb2ac4a3b236f70da3f2 = $(`<div id="html_ebb7f5c411f1cb2ac4a3b236f70da3f2" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 16.33395 Longitude: 78.26297 FRP: 2.78 MW Persistence: 1 days Industry Distance: 794.45 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_872230f41070f694f5320104e0a4937c.setContent(html_ebb7f5c411f1cb2ac4a3b236f70da3f2);
+            
+        
+
+        circle_marker_cec118a1e4205765223620d0b04a0a20.bindPopup(popup_872230f41070f694f5320104e0a4937c)
+        ;
+
+        
+    
+    
+            circle_marker_cec118a1e4205765223620d0b04a0a20.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99a87de2dd60e44521cc87bf2371dbe3 = L.circleMarker(
+                [16.61245, 79.49863],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_fa377deb6d67ec2b09f6455e2dc8957d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f0b15b0f9802731c2a049cfd47608922 = $(`<div id="html_f0b15b0f9802731c2a049cfd47608922" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 16.61245 Longitude: 79.49863 FRP: 2.67 MW Persistence: 1 days Industry Distance: 876.93 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_fa377deb6d67ec2b09f6455e2dc8957d.setContent(html_f0b15b0f9802731c2a049cfd47608922);
+            
+        
+
+        circle_marker_99a87de2dd60e44521cc87bf2371dbe3.bindPopup(popup_fa377deb6d67ec2b09f6455e2dc8957d)
+        ;
+
+        
+    
+    
+            circle_marker_99a87de2dd60e44521cc87bf2371dbe3.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb08f71538cc283f75b3f975111c3425 = L.circleMarker(
+                [16.82013, 78.19477],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_e0e48c3f29a7cb9e3dc92bb53b5d7eab = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6c7b4dbd27f52e0221151e85ad591c34 = $(`<div id="html_6c7b4dbd27f52e0221151e85ad591c34" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 16.82013 Longitude: 78.19477 FRP: 2.45 MW Persistence: 1 days Industry Distance: 753.18 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_e0e48c3f29a7cb9e3dc92bb53b5d7eab.setContent(html_6c7b4dbd27f52e0221151e85ad591c34);
+            
+        
+
+        circle_marker_cb08f71538cc283f75b3f975111c3425.bindPopup(popup_e0e48c3f29a7cb9e3dc92bb53b5d7eab)
+        ;
+
+        
+    
+    
+            circle_marker_cb08f71538cc283f75b3f975111c3425.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88618b709b6877666979a8265f1ca422 = L.circleMarker(
+                [17.03526, 77.73318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c4099b4025b0a43a63aa237f193bbacd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7f07f0d4b5800edf5f933842cd29f719 = $(`<div id="html_7f07f0d4b5800edf5f933842cd29f719" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Other Thermal Anomaly Latitude: 17.03526 Longitude: 77.73318 FRP: 0.81 MW Persistence: 1 days Industry Distance: 700.34 km Classification Confidence: 50.0% Date: 2026-09-21 Satellite: N  Reason: Thermal anomaly detected by NASA FIRMS</div>`)[0];
+                popup_c4099b4025b0a43a63aa237f193bbacd.setContent(html_7f07f0d4b5800edf5f933842cd29f719);
+            
+        
+
+        circle_marker_88618b709b6877666979a8265f1ca422.bindPopup(popup_c4099b4025b0a43a63aa237f193bbacd)
+        ;
+
+        
+    
+    
+            circle_marker_88618b709b6877666979a8265f1ca422.bindTooltip(
+                `<div>
+                     Other Thermal Anomaly
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb4b00c9f84a5d35efca3ce15767bf53 = L.circleMarker(
+                [17.09404, 80.59815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_ba7d70976094736f7e5ccbe3c9a11f05 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_97f360df6049bb6bed8a4f9c1334f06e = $(`<div id="html_97f360df6049bb6bed8a4f9c1334f06e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 17.09404 Longitude: 80.59815 FRP: 4.02 MW Persistence: 1 days Industry Distance: 914.15 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_ba7d70976094736f7e5ccbe3c9a11f05.setContent(html_97f360df6049bb6bed8a4f9c1334f06e);
+            
+        
+
+        circle_marker_eb4b00c9f84a5d35efca3ce15767bf53.bindPopup(popup_ba7d70976094736f7e5ccbe3c9a11f05)
+        ;
+
+        
+    
+    
+            circle_marker_eb4b00c9f84a5d35efca3ce15767bf53.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_904455d08328706a23fcffcaa26b29a7 = L.circleMarker(
+                [19.37039, 71.3538],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b7354ec628faf9f17c2ac24e79ae34f6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1d2a04a5274e09d4288135b59b08b460 = $(`<div id="html_1d2a04a5274e09d4288135b59b08b460" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 19.37039 Longitude: 71.35380 FRP: 3.21 MW Persistence: 1 days Industry Distance: 236.01 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b7354ec628faf9f17c2ac24e79ae34f6.setContent(html_1d2a04a5274e09d4288135b59b08b460);
+            
+        
+
+        circle_marker_904455d08328706a23fcffcaa26b29a7.bindPopup(popup_b7354ec628faf9f17c2ac24e79ae34f6)
+        ;
+
+        
+    
+    
+            circle_marker_904455d08328706a23fcffcaa26b29a7.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_706ba0542cd06dfda0234888cad251c3 = L.circleMarker(
+                [21.05754, 75.62813],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_234ff4bf20973336f1197976eda787cf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_003bb6e5d150b621a596ca32c59a4eb0 = $(`<div id="html_003bb6e5d150b621a596ca32c59a4eb0" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 21.05754 Longitude: 75.62813 FRP: 3.12 MW Persistence: 1 days Industry Distance: 309.03 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_234ff4bf20973336f1197976eda787cf.setContent(html_003bb6e5d150b621a596ca32c59a4eb0);
+            
+        
+
+        circle_marker_706ba0542cd06dfda0234888cad251c3.bindPopup(popup_234ff4bf20973336f1197976eda787cf)
+        ;
+
+        
+    
+    
+            circle_marker_706ba0542cd06dfda0234888cad251c3.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95d26fb4787f5ea165b97e5d3b5dfbf7 = L.circleMarker(
+                [21.10358, 72.63866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_af9cd821a38adaaed08893ab63fac29f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_96c83e6f632bb85ba49feb07083cfa6c = $(`<div id="html_96c83e6f632bb85ba49feb07083cfa6c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Industrial Fire Latitude: 21.10358 Longitude: 72.63866 FRP: 37.18 MW Persistence: 1 days Industry Distance: 1.38 km Classification Confidence: 80.0% Date: 2026-09-21 Satellite: N  Reason: Detection is close to an industrial reference location and has elevated FRP</div>`)[0];
+                popup_af9cd821a38adaaed08893ab63fac29f.setContent(html_96c83e6f632bb85ba49feb07083cfa6c);
+            
+        
+
+        circle_marker_95d26fb4787f5ea165b97e5d3b5dfbf7.bindPopup(popup_af9cd821a38adaaed08893ab63fac29f)
+        ;
+
+        
+    
+    
+            circle_marker_95d26fb4787f5ea165b97e5d3b5dfbf7.bindTooltip(
+                `<div>
+                     Industrial Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b66392069ac69c9b2468075b4e44141 = L.circleMarker(
+                [21.10517, 72.64781],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_835326c18b0f76f1525e8b9c4379406c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_02747bfd343e07e0920a7d9ed71d5310 = $(`<div id="html_02747bfd343e07e0920a7d9ed71d5310" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Industrial Fire Latitude: 21.10517 Longitude: 72.64781 FRP: 9.79 MW Persistence: 1 days Industry Distance: 0.58 km Classification Confidence: 80.0% Date: 2026-09-21 Satellite: N  Reason: Detection is close to an industrial reference location and has elevated FRP</div>`)[0];
+                popup_835326c18b0f76f1525e8b9c4379406c.setContent(html_02747bfd343e07e0920a7d9ed71d5310);
+            
+        
+
+        circle_marker_5b66392069ac69c9b2468075b4e44141.bindPopup(popup_835326c18b0f76f1525e8b9c4379406c)
+        ;
+
+        
+    
+    
+            circle_marker_5b66392069ac69c9b2468075b4e44141.bindTooltip(
+                `<div>
+                     Industrial Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd060cf4f1556113ea6923882fdf32ae = L.circleMarker(
+                [22.69435, 75.37374],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_1afe4387825908670cccdf670d0cb335 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_24f4750ac14ae4767b121053faedce6b = $(`<div id="html_24f4750ac14ae4767b121053faedce6b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 22.69435 Longitude: 75.37374 FRP: 2.56 MW Persistence: 1 days Industry Distance: 331.65 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_1afe4387825908670cccdf670d0cb335.setContent(html_24f4750ac14ae4767b121053faedce6b);
+            
+        
+
+        circle_marker_cd060cf4f1556113ea6923882fdf32ae.bindPopup(popup_1afe4387825908670cccdf670d0cb335)
+        ;
+
+        
+    
+    
+            circle_marker_cd060cf4f1556113ea6923882fdf32ae.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_037b6b347267bff09cb7578c50a8d256 = L.circleMarker(
+                [22.7711, 75.34428],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_25fda0b6b3d96f437e25d75fbc956630 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9cac7375a06fc1d887f567d48ca10573 = $(`<div id="html_9cac7375a06fc1d887f567d48ca10573" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 22.77110 Longitude: 75.34428 FRP: 1.18 MW Persistence: 1 days Industry Distance: 333.66 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_25fda0b6b3d96f437e25d75fbc956630.setContent(html_9cac7375a06fc1d887f567d48ca10573);
+            
+        
+
+        circle_marker_037b6b347267bff09cb7578c50a8d256.bindPopup(popup_25fda0b6b3d96f437e25d75fbc956630)
+        ;
+
+        
+    
+    
+            circle_marker_037b6b347267bff09cb7578c50a8d256.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac8ef7629f4efeec50028df31ff6dbf4 = L.circleMarker(
+                [22.88176, 75.44677],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_446204dc7d4b3c1b35993d4b4d01c183 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5937b4bd0803141a999b9a21db8d1ac8 = $(`<div id="html_5937b4bd0803141a999b9a21db8d1ac8" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 22.88176 Longitude: 75.44677 FRP: 3.81 MW Persistence: 1 days Industry Distance: 349.21 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_446204dc7d4b3c1b35993d4b4d01c183.setContent(html_5937b4bd0803141a999b9a21db8d1ac8);
+            
+        
+
+        circle_marker_ac8ef7629f4efeec50028df31ff6dbf4.bindPopup(popup_446204dc7d4b3c1b35993d4b4d01c183)
+        ;
+
+        
+    
+    
+            circle_marker_ac8ef7629f4efeec50028df31ff6dbf4.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_721a61440465b87930549f9e66c650e3 = L.circleMarker(
+                [22.94285, 75.73074],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_ec8649951ce3b1df8cb4be13735382df = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_637fb4dccc80ca9c3f9a3a34250ef1fc = $(`<div id="html_637fb4dccc80ca9c3f9a3a34250ef1fc" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 22.94285 Longitude: 75.73074 FRP: 3.80 MW Persistence: 1 days Industry Distance: 377.31 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_ec8649951ce3b1df8cb4be13735382df.setContent(html_637fb4dccc80ca9c3f9a3a34250ef1fc);
+            
+        
+
+        circle_marker_721a61440465b87930549f9e66c650e3.bindPopup(popup_ec8649951ce3b1df8cb4be13735382df)
+        ;
+
+        
+    
+    
+            circle_marker_721a61440465b87930549f9e66c650e3.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2bdcd1c2d3780cab3ccd0d7051be786 = L.circleMarker(
+                [22.94425, 75.89148],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_bdc108e5693c8d28ca977d101a614bbb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c13287d3acd23b859cee61aad93e2a47 = $(`<div id="html_c13287d3acd23b859cee61aad93e2a47" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 22.94425 Longitude: 75.89148 FRP: 2.13 MW Persistence: 1 days Industry Distance: 391.44 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_bdc108e5693c8d28ca977d101a614bbb.setContent(html_c13287d3acd23b859cee61aad93e2a47);
+            
+        
+
+        circle_marker_b2bdcd1c2d3780cab3ccd0d7051be786.bindPopup(popup_bdc108e5693c8d28ca977d101a614bbb)
+        ;
+
+        
+    
+    
+            circle_marker_b2bdcd1c2d3780cab3ccd0d7051be786.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_522a2a525d55095e12ff3a52e7e0e03b = L.circleMarker(
+                [23.23625, 75.98862],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b2a47cd6a40c903375790b058023069e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f57bf21566a9d824a433b3a491997c1c = $(`<div id="html_f57bf21566a9d824a433b3a491997c1c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 23.23625 Longitude: 75.98862 FRP: 2.20 MW Persistence: 1 days Industry Distance: 417.21 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b2a47cd6a40c903375790b058023069e.setContent(html_f57bf21566a9d824a433b3a491997c1c);
+            
+        
+
+        circle_marker_522a2a525d55095e12ff3a52e7e0e03b.bindPopup(popup_b2a47cd6a40c903375790b058023069e)
+        ;
+
+        
+    
+    
+            circle_marker_522a2a525d55095e12ff3a52e7e0e03b.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5443131f6b8255cbbebd7608f7a482f = L.circleMarker(
+                [23.12208, 70.08372],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_22ae4d1974960d7eb6c43c4ca3a41413 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_51b26c853bb53d4dbcc80671fa23f0b2 = $(`<div id="html_51b26c853bb53d4dbcc80671fa23f0b2" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 23.12208 Longitude: 70.08372 FRP: 3.83 MW Persistence: 1 days Industry Distance: 346.31 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_22ae4d1974960d7eb6c43c4ca3a41413.setContent(html_51b26c853bb53d4dbcc80671fa23f0b2);
+            
+        
+
+        circle_marker_d5443131f6b8255cbbebd7608f7a482f.bindPopup(popup_22ae4d1974960d7eb6c43c4ca3a41413)
+        ;
+
+        
+    
+    
+            circle_marker_d5443131f6b8255cbbebd7608f7a482f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d740adb488a1e36677f0b1798048122f = L.circleMarker(
+                [24.81587, 68.04147],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_69718066363aa727c4274ad950ce3ab5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9d4fd8129a0fe28597fe24b2c0030464 = $(`<div id="html_9d4fd8129a0fe28597fe24b2c0030464" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 24.81587 Longitude: 68.04147 FRP: 2.50 MW Persistence: 1 days Industry Distance: 626.34 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_69718066363aa727c4274ad950ce3ab5.setContent(html_9d4fd8129a0fe28597fe24b2c0030464);
+            
+        
+
+        circle_marker_d740adb488a1e36677f0b1798048122f.bindPopup(popup_69718066363aa727c4274ad950ce3ab5)
+        ;
+
+        
+    
+    
+            circle_marker_d740adb488a1e36677f0b1798048122f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1de9f862a2c3b03be2d2a4a651272035 = L.circleMarker(
+                [24.81766, 68.04298],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5de72307946618b575e7fd55dc678851 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_93f62f28a50453805b64f7658bebbd43 = $(`<div id="html_93f62f28a50453805b64f7658bebbd43" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 24.81766 Longitude: 68.04298 FRP: 3.71 MW Persistence: 1 days Industry Distance: 626.35 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5de72307946618b575e7fd55dc678851.setContent(html_93f62f28a50453805b64f7658bebbd43);
+            
+        
+
+        circle_marker_1de9f862a2c3b03be2d2a4a651272035.bindPopup(popup_5de72307946618b575e7fd55dc678851)
+        ;
+
+        
+    
+    
+            circle_marker_1de9f862a2c3b03be2d2a4a651272035.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d767b417dc3bda1afd74385ffa2d9c0 = L.circleMarker(
+                [25.38862, 68.58082],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c486f0e2f0493416974d9148fe010e01 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f8578bdaa60218bc4048ea591788ad0d = $(`<div id="html_f8578bdaa60218bc4048ea591788ad0d" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 25.38862 Longitude: 68.58082 FRP: 2.11 MW Persistence: 1 days Industry Distance: 631.70 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_c486f0e2f0493416974d9148fe010e01.setContent(html_f8578bdaa60218bc4048ea591788ad0d);
+            
+        
+
+        circle_marker_1d767b417dc3bda1afd74385ffa2d9c0.bindPopup(popup_c486f0e2f0493416974d9148fe010e01)
+        ;
+
+        
+    
+    
+            circle_marker_1d767b417dc3bda1afd74385ffa2d9c0.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f20b348bae327ec625302f5c816f3fac = L.circleMarker(
+                [25.55967, 68.45715],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_2faa3a1ab9f5b75ce0c017132fc1243b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1b206cecb7453942bc49d9a17d4edb1a = $(`<div id="html_1b206cecb7453942bc49d9a17d4edb1a" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 25.55967 Longitude: 68.45715 FRP: 1.43 MW Persistence: 1 days Industry Distance: 654.15 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_2faa3a1ab9f5b75ce0c017132fc1243b.setContent(html_1b206cecb7453942bc49d9a17d4edb1a);
+            
+        
+
+        circle_marker_f20b348bae327ec625302f5c816f3fac.bindPopup(popup_2faa3a1ab9f5b75ce0c017132fc1243b)
+        ;
+
+        
+    
+    
+            circle_marker_f20b348bae327ec625302f5c816f3fac.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd7e41c4ca7747b06bb96488e9935d2a = L.circleMarker(
+                [25.56394, 68.45611],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_40ec479a88a8da8f7cfc37cffc240eb6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_32581824acaaa9f161ab85738185d4a7 = $(`<div id="html_32581824acaaa9f161ab85738185d4a7" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 25.56394 Longitude: 68.45611 FRP: 2.45 MW Persistence: 1 days Industry Distance: 654.57 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_40ec479a88a8da8f7cfc37cffc240eb6.setContent(html_32581824acaaa9f161ab85738185d4a7);
+            
+        
+
+        circle_marker_fd7e41c4ca7747b06bb96488e9935d2a.bindPopup(popup_40ec479a88a8da8f7cfc37cffc240eb6)
+        ;
+
+        
+    
+    
+            circle_marker_fd7e41c4ca7747b06bb96488e9935d2a.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2802e5e777ba140ca8fe330fcad483ce = L.circleMarker(
+                [25.69573, 68.84558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_06518fbd10cee292ec684c05950b3080 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_861d0352806bacdf1fbd4568674856ff = $(`<div id="html_861d0352806bacdf1fbd4568674856ff" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 25.69573 Longitude: 68.84558 FRP: 2.50 MW Persistence: 1 days Industry Distance: 640.78 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_06518fbd10cee292ec684c05950b3080.setContent(html_861d0352806bacdf1fbd4568674856ff);
+            
+        
+
+        circle_marker_2802e5e777ba140ca8fe330fcad483ce.bindPopup(popup_06518fbd10cee292ec684c05950b3080)
+        ;
+
+        
+    
+    
+            circle_marker_2802e5e777ba140ca8fe330fcad483ce.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e2023b200b930fe55eefbd64e344d3f = L.circleMarker(
+                [27.0984, 68.12234],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_922aed7d4b8649a545d8e7ca6ee7be02 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7c0ccbae92b15c791b8b5dfc4a04ba3f = $(`<div id="html_7c0ccbae92b15c791b8b5dfc4a04ba3f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 27.09840 Longitude: 68.12234 FRP: 4.61 MW Persistence: 1 days Industry Distance: 808.86 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_922aed7d4b8649a545d8e7ca6ee7be02.setContent(html_7c0ccbae92b15c791b8b5dfc4a04ba3f);
+            
+        
+
+        circle_marker_9e2023b200b930fe55eefbd64e344d3f.bindPopup(popup_922aed7d4b8649a545d8e7ca6ee7be02)
+        ;
+
+        
+    
+    
+            circle_marker_9e2023b200b930fe55eefbd64e344d3f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f25624ecc9a86df98af19835637c9fdc = L.circleMarker(
+                [27.30935, 82.76711],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_74ebe6cee5bb2ff997677feeb816990c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4717975055a9f3f7c0c6a9df5126b87d = $(`<div id="html_4717975055a9f3f7c0c6a9df5126b87d" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 27.30935 Longitude: 82.76711 FRP: 9.17 MW Persistence: 1 days Industry Distance: 537.16 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_74ebe6cee5bb2ff997677feeb816990c.setContent(html_4717975055a9f3f7c0c6a9df5126b87d);
+            
+        
+
+        circle_marker_f25624ecc9a86df98af19835637c9fdc.bindPopup(popup_74ebe6cee5bb2ff997677feeb816990c)
+        ;
+
+        
+    
+    
+            circle_marker_f25624ecc9a86df98af19835637c9fdc.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6cd4ea42a4e9886d0856c96b5accb57 = L.circleMarker(
+                [27.83533, 75.0683],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_f8f62a0dcbdd2c5f60212aa020893b4f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_632ad1d2eefcc9ae063dfd1302113c39 = $(`<div id="html_632ad1d2eefcc9ae063dfd1302113c39" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 27.83533 Longitude: 75.06830 FRP: 1.22 MW Persistence: 1 days Industry Distance: 786.78 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_f8f62a0dcbdd2c5f60212aa020893b4f.setContent(html_632ad1d2eefcc9ae063dfd1302113c39);
+            
+        
+
+        circle_marker_a6cd4ea42a4e9886d0856c96b5accb57.bindPopup(popup_f8f62a0dcbdd2c5f60212aa020893b4f)
+        ;
+
+        
+    
+    
+            circle_marker_a6cd4ea42a4e9886d0856c96b5accb57.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2ecc8c9de8550de5dfbf36962323acb = L.circleMarker(
+                [28.06107, 77.68706],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_4441dceb85c34981681ec6b177b19515 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_423279743650d96472a4780ebc122160 = $(`<div id="html_423279743650d96472a4780ebc122160" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 28.06107 Longitude: 77.68706 FRP: 3.77 MW Persistence: 1 days Industry Distance: 925.35 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_4441dceb85c34981681ec6b177b19515.setContent(html_423279743650d96472a4780ebc122160);
+            
+        
+
+        circle_marker_e2ecc8c9de8550de5dfbf36962323acb.bindPopup(popup_4441dceb85c34981681ec6b177b19515)
+        ;
+
+        
+    
+    
+            circle_marker_e2ecc8c9de8550de5dfbf36962323acb.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32b6fb92e0b8ddb13510ba3f2514689f = L.circleMarker(
+                [28.06335, 77.6835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_f46bd5a50a0414e8da594dd4a42c4a5a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_57fb63077ed55a472f034255fe280aba = $(`<div id="html_57fb63077ed55a472f034255fe280aba" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 28.06335 Longitude: 77.68350 FRP: 4.15 MW Persistence: 1 days Industry Distance: 925.36 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_f46bd5a50a0414e8da594dd4a42c4a5a.setContent(html_57fb63077ed55a472f034255fe280aba);
+            
+        
+
+        circle_marker_32b6fb92e0b8ddb13510ba3f2514689f.bindPopup(popup_f46bd5a50a0414e8da594dd4a42c4a5a)
+        ;
+
+        
+    
+    
+            circle_marker_32b6fb92e0b8ddb13510ba3f2514689f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e0ae3c560bc6edbb681c73a9dc43acc = L.circleMarker(
+                [28.73018, 77.2591],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5a3994391eeb380eb4c58789b5ba312b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9eaabbe93c8b3ee9a6f51ce5ace2625f = $(`<div id="html_9eaabbe93c8b3ee9a6f51ce5ace2625f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 28.73018 Longitude: 77.25910 FRP: 1.51 MW Persistence: 1 days Industry Distance: 966.15 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5a3994391eeb380eb4c58789b5ba312b.setContent(html_9eaabbe93c8b3ee9a6f51ce5ace2625f);
+            
+        
+
+        circle_marker_4e0ae3c560bc6edbb681c73a9dc43acc.bindPopup(popup_5a3994391eeb380eb4c58789b5ba312b)
+        ;
+
+        
+    
+    
+            circle_marker_4e0ae3c560bc6edbb681c73a9dc43acc.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c7a9748c79498d6e7336eae37756a1e = L.circleMarker(
+                [29.58856, 76.99125],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_cd0639212a1d89cd788cc24abfb9ab84 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2a7f643e19ab2965c6d839c6c4fcfd97 = $(`<div id="html_2a7f643e19ab2965c6d839c6c4fcfd97" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 29.58856 Longitude: 76.99125 FRP: 3.29 MW Persistence: 1 days Industry Distance: 1038.52 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_cd0639212a1d89cd788cc24abfb9ab84.setContent(html_2a7f643e19ab2965c6d839c6c4fcfd97);
+            
+        
+
+        circle_marker_7c7a9748c79498d6e7336eae37756a1e.bindPopup(popup_cd0639212a1d89cd788cc24abfb9ab84)
+        ;
+
+        
+    
+    
+            circle_marker_7c7a9748c79498d6e7336eae37756a1e.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f78a822cb8e167ccbca22f5b4112960a = L.circleMarker(
+                [29.58877, 76.99303],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_01f3835e9a6d5f54742d208701575f5f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8d1da908cd4bdccde80e402e534a4631 = $(`<div id="html_8d1da908cd4bdccde80e402e534a4631" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 29.58877 Longitude: 76.99303 FRP: 2.82 MW Persistence: 1 days Industry Distance: 1038.62 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_01f3835e9a6d5f54742d208701575f5f.setContent(html_8d1da908cd4bdccde80e402e534a4631);
+            
+        
+
+        circle_marker_f78a822cb8e167ccbca22f5b4112960a.bindPopup(popup_01f3835e9a6d5f54742d208701575f5f)
+        ;
+
+        
+    
+    
+            circle_marker_f78a822cb8e167ccbca22f5b4112960a.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8f66244ad3a39877058d74352e73523 = L.circleMarker(
+                [29.72614, 72.50052],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_00d4c35788ff8fd30f8ea59550791920 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1336e38a0f1e5307628556961d5d264c = $(`<div id="html_1336e38a0f1e5307628556961d5d264c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 29.72614 Longitude: 72.50052 FRP: 3.81 MW Persistence: 1 days Industry Distance: 958.19 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_00d4c35788ff8fd30f8ea59550791920.setContent(html_1336e38a0f1e5307628556961d5d264c);
+            
+        
+
+        circle_marker_d8f66244ad3a39877058d74352e73523.bindPopup(popup_00d4c35788ff8fd30f8ea59550791920)
+        ;
+
+        
+    
+    
+            circle_marker_d8f66244ad3a39877058d74352e73523.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21a340bb28f9229334f3479d3edf6bc6 = L.circleMarker(
+                [30.39939, 72.33211],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_28f56853614c59f09af3da9352886209 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8fba1712e890f624aae6812119a1b025 = $(`<div id="html_8fba1712e890f624aae6812119a1b025" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.39939 Longitude: 72.33211 FRP: 4.32 MW Persistence: 1 days Industry Distance: 1033.42 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_28f56853614c59f09af3da9352886209.setContent(html_8fba1712e890f624aae6812119a1b025);
+            
+        
+
+        circle_marker_21a340bb28f9229334f3479d3edf6bc6.bindPopup(popup_28f56853614c59f09af3da9352886209)
+        ;
+
+        
+    
+    
+            circle_marker_21a340bb28f9229334f3479d3edf6bc6.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39ec163e8fb5f47aa9f47fb1609f76d9 = L.circleMarker(
+                [30.49247, 74.64198],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_260e25e3560be648ec9f20a0b0e46b2f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c3c6ebf7e7a0a5eba0b2221af39aa992 = $(`<div id="html_c3c6ebf7e7a0a5eba0b2221af39aa992" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.49247 Longitude: 74.64198 FRP: 2.20 MW Persistence: 1 days Industry Distance: 1062.10 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_260e25e3560be648ec9f20a0b0e46b2f.setContent(html_c3c6ebf7e7a0a5eba0b2221af39aa992);
+            
+        
+
+        circle_marker_39ec163e8fb5f47aa9f47fb1609f76d9.bindPopup(popup_260e25e3560be648ec9f20a0b0e46b2f)
+        ;
+
+        
+    
+    
+            circle_marker_39ec163e8fb5f47aa9f47fb1609f76d9.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b0c2fd6e5919efddd0427d291247017 = L.circleMarker(
+                [30.50016, 76.93479],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_119dfbc739a9fb451b26d4978343db62 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_355ac7034978df26e61f5030e5a69a97 = $(`<div id="html_355ac7034978df26e61f5030e5a69a97" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.50016 Longitude: 76.93479 FRP: 5.30 MW Persistence: 1 days Industry Distance: 1128.49 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_119dfbc739a9fb451b26d4978343db62.setContent(html_355ac7034978df26e61f5030e5a69a97);
+            
+        
+
+        circle_marker_3b0c2fd6e5919efddd0427d291247017.bindPopup(popup_119dfbc739a9fb451b26d4978343db62)
+        ;
+
+        
+    
+    
+            circle_marker_3b0c2fd6e5919efddd0427d291247017.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eebf8c23de58c47c088d1db1b454f1a4 = L.circleMarker(
+                [30.50368, 76.93418],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5c5ecc81e7da459889b80a0d80fec1b7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2f5ece5a81776b1d7d7eeed181bd2433 = $(`<div id="html_2f5ece5a81776b1d7d7eeed181bd2433" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.50368 Longitude: 76.93418 FRP: 5.30 MW Persistence: 1 days Industry Distance: 1128.83 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5c5ecc81e7da459889b80a0d80fec1b7.setContent(html_2f5ece5a81776b1d7d7eeed181bd2433);
+            
+        
+
+        circle_marker_eebf8c23de58c47c088d1db1b454f1a4.bindPopup(popup_5c5ecc81e7da459889b80a0d80fec1b7)
+        ;
+
+        
+    
+    
+            circle_marker_eebf8c23de58c47c088d1db1b454f1a4.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a946b4c289d9fd0ab41e8467e580f2d = L.circleMarker(
+                [30.59048, 76.77258],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5782d549901ed2e516b69f319736b723 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9902c951f752bbdc1be314822cbd63bb = $(`<div id="html_9902c951f752bbdc1be314822cbd63bb" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.59048 Longitude: 76.77258 FRP: 5.72 MW Persistence: 1 days Industry Distance: 1131.73 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5782d549901ed2e516b69f319736b723.setContent(html_9902c951f752bbdc1be314822cbd63bb);
+            
+        
+
+        circle_marker_5a946b4c289d9fd0ab41e8467e580f2d.bindPopup(popup_5782d549901ed2e516b69f319736b723)
+        ;
+
+        
+    
+    
+            circle_marker_5a946b4c289d9fd0ab41e8467e580f2d.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d96bc1b28d13aa33bbf3f5ce89875d1 = L.circleMarker(
+                [30.98242, 74.41074],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_35f6ab41ae54baa4b01ad7b3b52a9bb7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3bef76dfa36f1e6c4310c955ac963c87 = $(`<div id="html_3bef76dfa36f1e6c4310c955ac963c87" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.98242 Longitude: 74.41074 FRP: 3.43 MW Persistence: 1 days Industry Distance: 1111.71 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_35f6ab41ae54baa4b01ad7b3b52a9bb7.setContent(html_3bef76dfa36f1e6c4310c955ac963c87);
+            
+        
+
+        circle_marker_8d96bc1b28d13aa33bbf3f5ce89875d1.bindPopup(popup_35f6ab41ae54baa4b01ad7b3b52a9bb7)
+        ;
+
+        
+    
+    
+            circle_marker_8d96bc1b28d13aa33bbf3f5ce89875d1.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8aef9e0efa4eb734cfa717ed6810a74 = L.circleMarker(
+                [30.98572, 74.41007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_a96c8d34aeae54803ab57e0185f74659 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0013d0c0d52b32fc4eaffc9a51ad565e = $(`<div id="html_0013d0c0d52b32fc4eaffc9a51ad565e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 30.98572 Longitude: 74.41007 FRP: 4.88 MW Persistence: 1 days Industry Distance: 1112.06 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_a96c8d34aeae54803ab57e0185f74659.setContent(html_0013d0c0d52b32fc4eaffc9a51ad565e);
+            
+        
+
+        circle_marker_d8aef9e0efa4eb734cfa717ed6810a74.bindPopup(popup_a96c8d34aeae54803ab57e0185f74659)
+        ;
+
+        
+    
+    
+            circle_marker_d8aef9e0efa4eb734cfa717ed6810a74.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c35f4e8b79d5c27241fb28c704f172dd = L.circleMarker(
+                [31.04226, 74.42369],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_fa152dcd955c3c6dba33791e410aef66 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_df8e4f8e260d85fd1de7ecc004f47cb1 = $(`<div id="html_df8e4f8e260d85fd1de7ecc004f47cb1" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.04226 Longitude: 74.42369 FRP: 6.85 MW Persistence: 1 days Industry Distance: 1118.47 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_fa152dcd955c3c6dba33791e410aef66.setContent(html_df8e4f8e260d85fd1de7ecc004f47cb1);
+            
+        
+
+        circle_marker_c35f4e8b79d5c27241fb28c704f172dd.bindPopup(popup_fa152dcd955c3c6dba33791e410aef66)
+        ;
+
+        
+    
+    
+            circle_marker_c35f4e8b79d5c27241fb28c704f172dd.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8728f75957d4f02afac2194928585515 = L.circleMarker(
+                [31.06985, 74.51792],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c47e301faed23608443045fb200c1aff = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6c517d1b600d6a21b5c8ee156c1675a8 = $(`<div id="html_6c517d1b600d6a21b5c8ee156c1675a8" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.06985 Longitude: 74.51792 FRP: 3.22 MW Persistence: 1 days Industry Distance: 1123.02 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_c47e301faed23608443045fb200c1aff.setContent(html_6c517d1b600d6a21b5c8ee156c1675a8);
+            
+        
+
+        circle_marker_8728f75957d4f02afac2194928585515.bindPopup(popup_c47e301faed23608443045fb200c1aff)
+        ;
+
+        
+    
+    
+            circle_marker_8728f75957d4f02afac2194928585515.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09f47b7cc24039a7f304b552474c5575 = L.circleMarker(
+                [31.07616, 74.53748],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_accf18cdeb10c00f8909d9ece3f9bb92 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b8c7a21fa236bba38a209116de52a6c5 = $(`<div id="html_b8c7a21fa236bba38a209116de52a6c5" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.07616 Longitude: 74.53748 FRP: 2.41 MW Persistence: 1 days Industry Distance: 1124.03 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_accf18cdeb10c00f8909d9ece3f9bb92.setContent(html_b8c7a21fa236bba38a209116de52a6c5);
+            
+        
+
+        circle_marker_09f47b7cc24039a7f304b552474c5575.bindPopup(popup_accf18cdeb10c00f8909d9ece3f9bb92)
+        ;
+
+        
+    
+    
+            circle_marker_09f47b7cc24039a7f304b552474c5575.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_184507d7d9f334bf79cbf08709b32fda = L.circleMarker(
+                [31.10003, 72.32214],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_ca678577d5f9ce439ad916dac5c024e5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8d70e6cc1bd768414e76df079adca5ef = $(`<div id="html_8d70e6cc1bd768414e76df079adca5ef" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.10003 Longitude: 72.32214 FRP: 2.59 MW Persistence: 1 days Industry Distance: 1111.32 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_ca678577d5f9ce439ad916dac5c024e5.setContent(html_8d70e6cc1bd768414e76df079adca5ef);
+            
+        
+
+        circle_marker_184507d7d9f334bf79cbf08709b32fda.bindPopup(popup_ca678577d5f9ce439ad916dac5c024e5)
+        ;
+
+        
+    
+    
+            circle_marker_184507d7d9f334bf79cbf08709b32fda.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e8d931d86504d6b16f5e61f13b2d5f9 = L.circleMarker(
+                [31.10336, 72.3214],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_42d42b8ab89fa639000a0fce0b5b90b0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cbb94ab78a980db25fbb99e6e57f0469 = $(`<div id="html_cbb94ab78a980db25fbb99e6e57f0469" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.10336 Longitude: 72.32140 FRP: 2.59 MW Persistence: 1 days Industry Distance: 1111.69 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_42d42b8ab89fa639000a0fce0b5b90b0.setContent(html_cbb94ab78a980db25fbb99e6e57f0469);
+            
+        
+
+        circle_marker_9e8d931d86504d6b16f5e61f13b2d5f9.bindPopup(popup_42d42b8ab89fa639000a0fce0b5b90b0)
+        ;
+
+        
+    
+    
+            circle_marker_9e8d931d86504d6b16f5e61f13b2d5f9.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db71c5ab779f991b4ec63a4332fba1eb = L.circleMarker(
+                [31.1235, 74.67964],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_be4143fac0ff59cac933d8fd591df557 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_31a544abe42378f8afb6e1dcd686586f = $(`<div id="html_31a544abe42378f8afb6e1dcd686586f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.12350 Longitude: 74.67964 FRP: 8.94 MW Persistence: 1 days Industry Distance: 1131.66 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_be4143fac0ff59cac933d8fd591df557.setContent(html_31a544abe42378f8afb6e1dcd686586f);
+            
+        
+
+        circle_marker_db71c5ab779f991b4ec63a4332fba1eb.bindPopup(popup_be4143fac0ff59cac933d8fd591df557)
+        ;
+
+        
+    
+    
+            circle_marker_db71c5ab779f991b4ec63a4332fba1eb.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be45b7bdc8ce8887b14dacb2049ad579 = L.circleMarker(
+                [31.12682, 74.67899],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_ed084e5c1dafe8739fb86f6347c6b45f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e6c99c9f2c44a25c8fbfdc053b2bc549 = $(`<div id="html_e6c99c9f2c44a25c8fbfdc053b2bc549" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.12682 Longitude: 74.67899 FRP: 3.15 MW Persistence: 1 days Industry Distance: 1132.01 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_ed084e5c1dafe8739fb86f6347c6b45f.setContent(html_e6c99c9f2c44a25c8fbfdc053b2bc549);
+            
+        
+
+        circle_marker_be45b7bdc8ce8887b14dacb2049ad579.bindPopup(popup_ed084e5c1dafe8739fb86f6347c6b45f)
+        ;
+
+        
+    
+    
+            circle_marker_be45b7bdc8ce8887b14dacb2049ad579.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bdd1c21023183c2866d425927083c99f = L.circleMarker(
+                [31.30233, 75.1265],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_3d0a4277e77921608942dd691440eb52 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_001cf6fc4984cb2498731362bd3d266e = $(`<div id="html_001cf6fc4984cb2498731362bd3d266e" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.30233 Longitude: 75.12650 FRP: 2.53 MW Persistence: 1 days Industry Distance: 1159.83 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_3d0a4277e77921608942dd691440eb52.setContent(html_001cf6fc4984cb2498731362bd3d266e);
+            
+        
+
+        circle_marker_bdd1c21023183c2866d425927083c99f.bindPopup(popup_3d0a4277e77921608942dd691440eb52)
+        ;
+
+        
+    
+    
+            circle_marker_bdd1c21023183c2866d425927083c99f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_490a00b41ef9f63d281875153598920c = L.circleMarker(
+                [31.31937, 74.6959],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_a544a457c6596eaba8cff3a6bf5655a5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cb0eecb3abd7ef181ee213c2a57dcc2a = $(`<div id="html_cb0eecb3abd7ef181ee213c2a57dcc2a" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.31937 Longitude: 74.69590 FRP: 2.59 MW Persistence: 1 days Industry Distance: 1153.35 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_a544a457c6596eaba8cff3a6bf5655a5.setContent(html_cb0eecb3abd7ef181ee213c2a57dcc2a);
+            
+        
+
+        circle_marker_490a00b41ef9f63d281875153598920c.bindPopup(popup_a544a457c6596eaba8cff3a6bf5655a5)
+        ;
+
+        
+    
+    
+            circle_marker_490a00b41ef9f63d281875153598920c.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61f572c345229c06b07b23616dfe176e = L.circleMarker(
+                [31.37797, 74.54229],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_54573ea425530649e3d2e5f3ef31f2c7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_292ddeba0c8f8b390570ede969e8f068 = $(`<div id="html_292ddeba0c8f8b390570ede969e8f068" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.37797 Longitude: 74.54229 FRP: 10.20 MW Persistence: 1 days Industry Distance: 1157.17 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_54573ea425530649e3d2e5f3ef31f2c7.setContent(html_292ddeba0c8f8b390570ede969e8f068);
+            
+        
+
+        circle_marker_61f572c345229c06b07b23616dfe176e.bindPopup(popup_54573ea425530649e3d2e5f3ef31f2c7)
+        ;
+
+        
+    
+    
+            circle_marker_61f572c345229c06b07b23616dfe176e.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c503ac4832c57e4c50f6cc48339caf5 = L.circleMarker(
+                [31.40234, 75.215],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_d25b0787d921fdff1112a089f2cbf39e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b1f24917a0df1079cf7ec6310af8ff3c = $(`<div id="html_b1f24917a0df1079cf7ec6310af8ff3c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.40234 Longitude: 75.21500 FRP: 2.33 MW Persistence: 1 days Industry Distance: 1172.56 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_d25b0787d921fdff1112a089f2cbf39e.setContent(html_b1f24917a0df1079cf7ec6310af8ff3c);
+            
+        
+
+        circle_marker_8c503ac4832c57e4c50f6cc48339caf5.bindPopup(popup_d25b0787d921fdff1112a089f2cbf39e)
+        ;
+
+        
+    
+    
+            circle_marker_8c503ac4832c57e4c50f6cc48339caf5.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c962e2622f86eaa965999ca95b04995 = L.circleMarker(
+                [31.50406, 72.3751],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_6e5d691e14ef6b8205d693779cc7327c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_da69f8d81e13499fed4194113756bdff = $(`<div id="html_da69f8d81e13499fed4194113756bdff" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.50406 Longitude: 72.37510 FRP: 2.76 MW Persistence: 1 days Industry Distance: 1156.09 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_6e5d691e14ef6b8205d693779cc7327c.setContent(html_da69f8d81e13499fed4194113756bdff);
+            
+        
+
+        circle_marker_3c962e2622f86eaa965999ca95b04995.bindPopup(popup_6e5d691e14ef6b8205d693779cc7327c)
+        ;
+
+        
+    
+    
+            circle_marker_3c962e2622f86eaa965999ca95b04995.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88b0ab33b0d6f56cc313e066016857b0 = L.circleMarker(
+                [31.60312, 75.03194],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_4f12683e94de663454f90b2bd6a13763 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9e772e8a98f60e854225801ec73938c0 = $(`<div id="html_9e772e8a98f60e854225801ec73938c0" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.60312 Longitude: 75.03194 FRP: 3.77 MW Persistence: 1 days Industry Distance: 1190.56 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_4f12683e94de663454f90b2bd6a13763.setContent(html_9e772e8a98f60e854225801ec73938c0);
+            
+        
+
+        circle_marker_88b0ab33b0d6f56cc313e066016857b0.bindPopup(popup_4f12683e94de663454f90b2bd6a13763)
+        ;
+
+        
+    
+    
+            circle_marker_88b0ab33b0d6f56cc313e066016857b0.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6dba3e80f269d231a7cb43d8582e2f9 = L.circleMarker(
+                [31.61878, 72.47723],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_7830495e0506f9ee5e52ee1ef1d3c8a6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_85305c2f1fc1724bcc31edc6d6a9133b = $(`<div id="html_85305c2f1fc1724bcc31edc6d6a9133b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.61878 Longitude: 72.47723 FRP: 2.22 MW Persistence: 1 days Industry Distance: 1168.65 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_7830495e0506f9ee5e52ee1ef1d3c8a6.setContent(html_85305c2f1fc1724bcc31edc6d6a9133b);
+            
+        
+
+        circle_marker_d6dba3e80f269d231a7cb43d8582e2f9.bindPopup(popup_7830495e0506f9ee5e52ee1ef1d3c8a6)
+        ;
+
+        
+    
+    
+            circle_marker_d6dba3e80f269d231a7cb43d8582e2f9.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c02ce28bfa0e100b662522c3ac75c34c = L.circleMarker(
+                [31.69464, 75.28987],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_257e2c5a2175b43d41263d55d1e87480 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6524ce315a5d9737542d654dd0aff8e0 = $(`<div id="html_6524ce315a5d9737542d654dd0aff8e0" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.69464 Longitude: 75.28987 FRP: 1.73 MW Persistence: 1 days Industry Distance: 1205.82 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_257e2c5a2175b43d41263d55d1e87480.setContent(html_6524ce315a5d9737542d654dd0aff8e0);
+            
+        
+
+        circle_marker_c02ce28bfa0e100b662522c3ac75c34c.bindPopup(popup_257e2c5a2175b43d41263d55d1e87480)
+        ;
+
+        
+    
+    
+            circle_marker_c02ce28bfa0e100b662522c3ac75c34c.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_461d9a9a96ed678ba4d00c83968e9df2 = L.circleMarker(
+                [31.7096, 75.04677],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_56c87d087881af05347cd53880bfce5b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1e3d4d0cf7da9559c8c591865057bd5b = $(`<div id="html_1e3d4d0cf7da9559c8c591865057bd5b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.70960 Longitude: 75.04677 FRP: 4.63 MW Persistence: 1 days Industry Distance: 1202.43 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_56c87d087881af05347cd53880bfce5b.setContent(html_1e3d4d0cf7da9559c8c591865057bd5b);
+            
+        
+
+        circle_marker_461d9a9a96ed678ba4d00c83968e9df2.bindPopup(popup_56c87d087881af05347cd53880bfce5b)
+        ;
+
+        
+    
+    
+            circle_marker_461d9a9a96ed678ba4d00c83968e9df2.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e93a38fcc1a033756b72571224bd0404 = L.circleMarker(
+                [31.7358, 72.59135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_96198d2aa3b451a579e248bb17282f3d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_69b20a456b453940417f4964dd01fc9f = $(`<div id="html_69b20a456b453940417f4964dd01fc9f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.73580 Longitude: 72.59135 FRP: 2.45 MW Persistence: 1 days Industry Distance: 1181.55 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_96198d2aa3b451a579e248bb17282f3d.setContent(html_69b20a456b453940417f4964dd01fc9f);
+            
+        
+
+        circle_marker_e93a38fcc1a033756b72571224bd0404.bindPopup(popup_96198d2aa3b451a579e248bb17282f3d)
+        ;
+
+        
+    
+    
+            circle_marker_e93a38fcc1a033756b72571224bd0404.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17a9c8855e105e7706d9793b934e6fd8 = L.circleMarker(
+                [31.73646, 72.59542],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_38bc3f900275623ab8809e415e85da0b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e560c086d6e62004237d6f28fb1fb44f = $(`<div id="html_e560c086d6e62004237d6f28fb1fb44f" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.73646 Longitude: 72.59542 FRP: 2.45 MW Persistence: 1 days Industry Distance: 1181.62 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_38bc3f900275623ab8809e415e85da0b.setContent(html_e560c086d6e62004237d6f28fb1fb44f);
+            
+        
+
+        circle_marker_17a9c8855e105e7706d9793b934e6fd8.bindPopup(popup_38bc3f900275623ab8809e415e85da0b)
+        ;
+
+        
+    
+    
+            circle_marker_17a9c8855e105e7706d9793b934e6fd8.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e191383db1591366c9ba7ac32666b3c = L.circleMarker(
+                [31.78019, 74.10877],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_4e8f44265d68d8c749100a9a335f027b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_eac44bc2a9ded617553c0a9f81f50dfa = $(`<div id="html_eac44bc2a9ded617553c0a9f81f50dfa" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.78019 Longitude: 74.10877 FRP: 1.89 MW Persistence: 1 days Industry Distance: 1195.28 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_4e8f44265d68d8c749100a9a335f027b.setContent(html_eac44bc2a9ded617553c0a9f81f50dfa);
+            
+        
+
+        circle_marker_2e191383db1591366c9ba7ac32666b3c.bindPopup(popup_4e8f44265d68d8c749100a9a335f027b)
+        ;
+
+        
+    
+    
+            circle_marker_2e191383db1591366c9ba7ac32666b3c.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57cd1b1020aa30dc5318cf528e0108d0 = L.circleMarker(
+                [31.79288, 75.02636],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_af53c47064463023a29c4ace85ade3f2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_211bb15513419e05ff6d48b8feafddfe = $(`<div id="html_211bb15513419e05ff6d48b8feafddfe" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.79288 Longitude: 75.02636 FRP: 3.36 MW Persistence: 1 days Industry Distance: 1211.09 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_af53c47064463023a29c4ace85ade3f2.setContent(html_211bb15513419e05ff6d48b8feafddfe);
+            
+        
+
+        circle_marker_57cd1b1020aa30dc5318cf528e0108d0.bindPopup(popup_af53c47064463023a29c4ace85ade3f2)
+        ;
+
+        
+    
+    
+            circle_marker_57cd1b1020aa30dc5318cf528e0108d0.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_963cbbd11dc8e2c38d63c997af87e77f = L.circleMarker(
+                [31.86499, 75.11228],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_bf112dc67734ba35b0a2c7144da52fda = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9872976be976344388bd77ec59962070 = $(`<div id="html_9872976be976344388bd77ec59962070" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.86499 Longitude: 75.11228 FRP: 2.44 MW Persistence: 1 days Industry Distance: 1220.62 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_bf112dc67734ba35b0a2c7144da52fda.setContent(html_9872976be976344388bd77ec59962070);
+            
+        
+
+        circle_marker_963cbbd11dc8e2c38d63c997af87e77f.bindPopup(popup_bf112dc67734ba35b0a2c7144da52fda)
+        ;
+
+        
+    
+    
+            circle_marker_963cbbd11dc8e2c38d63c997af87e77f.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8065accf1ec6e3a564c3e587904dd878 = L.circleMarker(
+                [31.87231, 73.95262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_a225720405c64ab6ca32473889b5b6aa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5b4acaf01765c96fb0c2ea520476b25b = $(`<div id="html_5b4acaf01765c96fb0c2ea520476b25b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.87231 Longitude: 73.95262 FRP: 6.31 MW Persistence: 1 days Industry Distance: 1203.68 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_a225720405c64ab6ca32473889b5b6aa.setContent(html_5b4acaf01765c96fb0c2ea520476b25b);
+            
+        
+
+        circle_marker_8065accf1ec6e3a564c3e587904dd878.bindPopup(popup_a225720405c64ab6ca32473889b5b6aa)
+        ;
+
+        
+    
+    
+            circle_marker_8065accf1ec6e3a564c3e587904dd878.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51015bcd37b249cf9dbc449f5a186e81 = L.circleMarker(
+                [31.8985, 73.63045],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_e8327125e7d72f716d4f9542a5646323 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f3ec6f3f3acad5048c83c12e60ca8821 = $(`<div id="html_f3ec6f3f3acad5048c83c12e60ca8821" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.89850 Longitude: 73.63045 FRP: 6.03 MW Persistence: 1 days Industry Distance: 1203.57 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_e8327125e7d72f716d4f9542a5646323.setContent(html_f3ec6f3f3acad5048c83c12e60ca8821);
+            
+        
+
+        circle_marker_51015bcd37b249cf9dbc449f5a186e81.bindPopup(popup_e8327125e7d72f716d4f9542a5646323)
+        ;
+
+        
+    
+    
+            circle_marker_51015bcd37b249cf9dbc449f5a186e81.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70a7ad92ac0e3c9c2b1b94ed58a55750 = L.circleMarker(
+                [31.89911, 73.63448],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_e4e974cf7c416c73550e1f7c33208697 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1cd4c2759bbc7e784a217b2476d6665b = $(`<div id="html_1cd4c2759bbc7e784a217b2476d6665b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 31.89911 Longitude: 73.63448 FRP: 9.12 MW Persistence: 1 days Industry Distance: 1203.67 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_e4e974cf7c416c73550e1f7c33208697.setContent(html_1cd4c2759bbc7e784a217b2476d6665b);
+            
+        
+
+        circle_marker_70a7ad92ac0e3c9c2b1b94ed58a55750.bindPopup(popup_e4e974cf7c416c73550e1f7c33208697)
+        ;
+
+        
+    
+    
+            circle_marker_70a7ad92ac0e3c9c2b1b94ed58a55750.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_483e37065d9eac8b1ebf2d6ce3dc184d = L.circleMarker(
+                [32.27169, 75.38228],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_920d8bce86df6b241b6aa1082475844c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_258928843198db3374bd7919947f77c4 = $(`<div id="html_258928843198db3374bd7919947f77c4" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 32.27169 Longitude: 75.38228 FRP: 4.61 MW Persistence: 1 days Industry Distance: 1270.30 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_920d8bce86df6b241b6aa1082475844c.setContent(html_258928843198db3374bd7919947f77c4);
+            
+        
+
+        circle_marker_483e37065d9eac8b1ebf2d6ce3dc184d.bindPopup(popup_920d8bce86df6b241b6aa1082475844c)
+        ;
+
+        
+    
+    
+            circle_marker_483e37065d9eac8b1ebf2d6ce3dc184d.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52d62b4dd8d74964d82b014192210e01 = L.circleMarker(
+                [32.90086, 73.13861],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_4b2432cec505fe9410641d3fa7699e86 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3adfba0af8710ce39c2fa6950fbb995b = $(`<div id="html_3adfba0af8710ce39c2fa6950fbb995b" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 32.90086 Longitude: 73.13861 FRP: 2.64 MW Persistence: 1 days Industry Distance: 1311.97 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_4b2432cec505fe9410641d3fa7699e86.setContent(html_3adfba0af8710ce39c2fa6950fbb995b);
+            
+        
+
+        circle_marker_52d62b4dd8d74964d82b014192210e01.bindPopup(popup_4b2432cec505fe9410641d3fa7699e86)
+        ;
+
+        
+    
+    
+            circle_marker_52d62b4dd8d74964d82b014192210e01.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d843a312593551a3574b6a2b89f0a96 = L.circleMarker(
+                [33.49573, 70.35722],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_c3ccd7652d20b5f03125da683bdcb1c7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5f4ffb0b15f8728d10c3ad8e122c259c = $(`<div id="html_5f4ffb0b15f8728d10c3ad8e122c259c" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 33.49573 Longitude: 70.35722 FRP: 5.85 MW Persistence: 1 days Industry Distance: 1395.61 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_c3ccd7652d20b5f03125da683bdcb1c7.setContent(html_5f4ffb0b15f8728d10c3ad8e122c259c);
+            
+        
+
+        circle_marker_1d843a312593551a3574b6a2b89f0a96.bindPopup(popup_c3ccd7652d20b5f03125da683bdcb1c7)
+        ;
+
+        
+    
+    
+            circle_marker_1d843a312593551a3574b6a2b89f0a96.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8eb7bfdb346a586f9babe8eaffbaab7 = L.circleMarker(
+                [33.49916, 70.35637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_b03760279db489949275a95b3c298c95 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2555bb71c52a5f4d756e42b08f4d6d56 = $(`<div id="html_2555bb71c52a5f4d756e42b08f4d6d56" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 33.49916 Longitude: 70.35637 FRP: 5.85 MW Persistence: 1 days Industry Distance: 1396.00 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_b03760279db489949275a95b3c298c95.setContent(html_2555bb71c52a5f4d756e42b08f4d6d56);
+            
+        
+
+        circle_marker_b8eb7bfdb346a586f9babe8eaffbaab7.bindPopup(popup_b03760279db489949275a95b3c298c95)
+        ;
+
+        
+    
+    
+            circle_marker_b8eb7bfdb346a586f9babe8eaffbaab7.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aca85fe9c94fac082f2a002db3c59591 = L.circleMarker(
+                [34.61545, 69.71689],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_5fcd0ebbdece3d37b669811e78e37215 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_078fa12408f4dd27ce645fcb2689ded7 = $(`<div id="html_078fa12408f4dd27ce645fcb2689ded7" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 34.61545 Longitude: 69.71689 FRP: 6.99 MW Persistence: 1 days Industry Distance: 1528.93 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_5fcd0ebbdece3d37b669811e78e37215.setContent(html_078fa12408f4dd27ce645fcb2689ded7);
+            
+        
+
+        circle_marker_aca85fe9c94fac082f2a002db3c59591.bindPopup(popup_5fcd0ebbdece3d37b669811e78e37215)
+        ;
+
+        
+    
+    
+            circle_marker_aca85fe9c94fac082f2a002db3c59591.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d883c714ccf45d8aaf8096c20b79cfdd = L.circleMarker(
+                [35.43547, 73.60424],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_4d823a312d02f09cade5de6172b21b98);
+        
+    
+        var popup_798776ebbb4f230fdd28b2c0ac4bbbe2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_865686f14d574da882cdf57b49d3968a = $(`<div id="html_865686f14d574da882cdf57b49d3968a" style="width: 100.0%; height: 100.0%;">🔥 FIRE DETECTION  Fire Class: Agricultural Fire Latitude: 35.43547 Longitude: 73.60424 FRP: 4.68 MW Persistence: 1 days Industry Distance: 1595.63 km Classification Confidence: 60.0% Date: 2026-09-21 Satellite: N  Reason: Short-duration thermal detection; possible agricultural burning</div>`)[0];
+                popup_798776ebbb4f230fdd28b2c0ac4bbbe2.setContent(html_865686f14d574da882cdf57b49d3968a);
+            
+        
+
+        circle_marker_d883c714ccf45d8aaf8096c20b79cfdd.bindPopup(popup_798776ebbb4f230fdd28b2c0ac4bbbe2)
+        ;
+
+        
+    
+    
+            circle_marker_d883c714ccf45d8aaf8096c20b79cfdd.bindTooltip(
+                `<div>
+                     Agricultural Fire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

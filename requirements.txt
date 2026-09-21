@@ -1,0 +1,10 @@
+pandas
+numpy
+geopandas
+shapely
+pyproj
+requests
+folium
+streamlit
+streamlit-folium
+python-dotenv
